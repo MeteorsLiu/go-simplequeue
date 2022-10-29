@@ -9,8 +9,11 @@ import (
 
 const (
 	DEFAULT_QUEUE_CAP = 1024
-	POOL_EMIPTY       = errors.New("pool is empty")
-	POOL_FULL         = errors.New("pool is full")
+)
+
+var (
+	POOL_EMIPTY = errors.New("pool is empty")
+	POOL_FULL   = errors.New("pool is full")
 )
 
 type Queue struct {
